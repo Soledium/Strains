@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Strains</h1>
+
+<div id="strains">
+  <% @strains.each do |strain| %>
+    <%= render strain %>
+    <p>
+      <%= link_to "Show this strain", strain %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New strain", new_strain_path %>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @wine_strain %>
+
+<div>
+  <%= link_to "Edit this wine strain", edit_wine_strain_path(@wine_strain) %> |
+  <%= link_to "Back to wine strains", wine_strains_path %>
+
+  <%= button_to "Destroy this wine strain", @wine_strain, method: :delete %>
+</div>
